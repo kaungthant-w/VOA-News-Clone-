@@ -20,6 +20,7 @@ body {
     background-color: var(--bgColor);
     font-family: 'Merriweather','Montserrat',  serif, sans-serif;
     color: #768492;
+    position: relative;
 }
 
 /* header  */
@@ -95,15 +96,108 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    
 }
 
 .navbar li a {
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     color: var(--textColor);
     font-weight: 500;
-    font-family:'Montserrat' ;
+    font-family:'Montserrat';
 }
 
 .navbar li a:hover {
     color: var(--hrColor);
+}
+
+/* content  */
+.content {
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    height: 260px;
+    /* background-color: red; */
+    margin-bottom: 2rem;
+
+    display: flex;
+    gap: 1.2rem;
+}
+
+.ukraine, .world-news, .telling-america-story, .china-news {
+    flex-grow: 2;
+}
+
+.north-korea, .headlines, .press-freedom, .iran-news {
+    flex-grow: 1;
+}
+
+.ukraine, .world-news, .telling-america-story, .china-news  {
+    /* width:70%; */
+    /* height: 100%; */
+    background-color: #4cf0f0;
+}
+
+.north-korea, .headlines, .press-freedom, .iran-news {
+    /* width: 30%; */
+    /* height: 100%; */
+    background-color: #A1AAB3;
+}
+
+
+@media (max-width:991px) {
+
+    .media {
+        position: fixed;
+        flex: 100%;
+        justify-content: space-evenly;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-right: 0;
+        background-color: #e3e7eb;
+
+    }
+
+    .search {
+        position: fixed;
+        bottom: 0.6rem;
+        right: 4rem;
+        z-index: 1000;
+    }
+
+    .varLine {
+        display: none;
+    }
+
+    .nav {
+        font-size: 0.65rem;
+    }
+
+    .fa-language {
+        order: 1;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+    .ukraine, .world-news, .telling-america-story, .china-news {
+        flex: 100%;
+    }
+
+    .north-korea, .headlines, .press-freedom, .iran-news {
+        flex: 100%;
+    }
+}
+
+@media (max-width:699px) {
+    .navbar {
+        white-space: nowrap;
+        justify-content: flex-start;
+        overflow-y:hidden;
+        overflow-x: scroll;
+        /* padding: 0 2rem; */
+    }
 }
