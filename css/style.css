@@ -23,7 +23,7 @@ body {
     position: relative;
 }
 
-/* header  */
+/* header start  */
 
 header {
     width: 100%;
@@ -77,7 +77,7 @@ header {
     cursor: pointer;
 }
 
-/* nav bar  */
+/* nav bar start  */
 .nav {
     height: 58px;
     width: 100%;
@@ -111,14 +111,14 @@ header {
     color: var(--hrColor);
 }
 
-/* content  */
+/* content start  */
 .content {
     padding: 2rem;
 }
 
 .container {
     width: 100%;
-    height: 260px;
+    /* height: 300px; */
     /* background-color: red; */
     margin-bottom: 2rem;
 
@@ -128,10 +128,15 @@ header {
 
 .ukraine, .world-news, .telling-america-story, .china-news {
     flex-grow: 2;
+    width: 100%;
+
 }
+
 
 .north-korea, .headlines, .press-freedom, .iran-news {
     flex-grow: 1;
+    width: 100%;
+    margin-top: -0.7rem;
 }
 
 /* .ukraine, .world-news, .telling-america-story, .china-news  {
@@ -146,6 +151,99 @@ header {
     background-color: #A1AAB3;
 } */
 
+.Title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--headerColor);
+    padding-bottom: 0.5rem;
+    /* width: 98%; */
+}
+
+/* ukraine */
+.ukraine .bx {
+    font-size: 2rem;
+    color: var(--mainTitleColor);
+}
+
+.post {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.mainPost {
+    height: 100%;
+    width: 100%;
+}
+
+.mainPost-1 {
+    width: 100%;
+}
+
+.mainPost-1 img {
+    max-width: 100%;
+}
+
+.mainPost-1 p {
+    width: 50%;
+    font-weight: 600;
+    font-size: large;
+}
+
+.mainPost-2 {
+    padding: 2rem 2rem 2rem 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mainPost-2 img, .subPostList img {
+    width: 160px;
+    height: 80px;
+}
+
+.mainPost-2 p {
+    width: 45%;
+}
+
+.subPost {
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subPostList {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+
+}
+
+.subPostList .audio {
+    position: absolute;
+    top: 2px;
+    z-index: 1000;
+    width: 85px;
+    height: 20px;
+    color: #000;
+}
+
+/* .subPostList img {
+    width: 140px;
+    height: 80px;
+} */
+
+.subPostList p {
+    font-size: 0.9rem;
+}
+
+.north-korea {
+    background-color: red;
+}
 
 
 
@@ -168,7 +266,6 @@ header {
         padding:0;
         justify-content: space-around;
         align-items: center;
-
     }
 
      .menu .bx-menu {
@@ -204,6 +301,7 @@ header {
         font-size: 0.65rem;
     }
 
+    /* content  */
     .content {
         padding: 0.6rem;
     }
@@ -216,12 +314,29 @@ header {
         flex-wrap: wrap;
     }
     .ukraine, .world-news, .telling-america-story, .china-news {
+        padding: 0 4vw;
         flex: 100%;
+        width: 100%;
     }
 
     .north-korea, .headlines, .press-freedom, .iran-news {
         flex: 100%;
     }
+
+    .mainPost-1 p {
+        width: 100%;
+        font-weight: 200;
+    }
+
+    .subPostList img, .mainPost-2 img  {
+        width: 100px;
+        height: 65px;
+    }
+
+    .subPostList p {
+        font-size:0.87rem;
+    }
+
 }
 
 @media (max-width:699px) {
@@ -234,6 +349,32 @@ header {
 
     .search {
         right: 2rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .post {
+        gap: 1.4rem;
+    }
+
+    .mainPost-1 img {
+        max-width: 100%;
+    }
+
+    .mainPost-1 p {
+        width: 95%;
+    }
+}
+
+@media (max-width:639px) {
+    .post {
+        flex-direction: column;
+    }
+
+    .mainPost-2 p {
+        width: 100%;
     }
 }
 
