@@ -23,11 +23,61 @@ body {
     position: relative;
 }
 
+/***************** to use every section CSS  *****************/
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* height: 300px; */
+    /* background-color: rgb(93, 183, 206); */
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.mainPost p {
+    width: 98%;
+    font-size: 1.2rem;
+    font-weight: 300;   
+    color:var(--textColor);
+    margin-top: 0.6rem;
+    cursor: pointer;
+}
+
+.mainPost-1 img {
+    width: 100%;
+}
+
 ul {
     list-style: none;
 }
 
-/* header start  */
+.Title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--headerColor);
+    padding-bottom: 0.5rem;
+}
+
+.Title h2:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+p:hover {
+    filter: brightness(0.8);
+}
+
+img {
+    background-size: cover;
+    cursor: pointer;
+}
+
+img:hover {
+    filter: brightness(0.9);
+}
+
+/****************** header start  **************************/
 
 header {
     width: 100%;
@@ -86,7 +136,7 @@ header {
     cursor: pointer;
 }
 
-/* nav bar start  */
+/**************** nav bar start  *********************/
 .nav {
     height: 58px;
     width: 100%;
@@ -119,22 +169,11 @@ header {
     color: var(--hrColor);
 }
 
-/* content start  */
+/**************** content start  *********************/
 .content {
     padding: 2rem;
     width: 100%;
     height: 100%;
-}
-
-.container {
-    width: 100%;
-    height: 100%;
-    /* height: 300px; */
-    /* background-color: rgb(93, 183, 206); */
-    margin-bottom: 2rem;
-
-    display: flex;
-    gap: 1.2rem;
 }
 
 .ukraine, .world-news, .telling-america-story, .china-news {
@@ -172,19 +211,8 @@ header {
     background-color: #A1AAB3;
 } */
 
-.Title {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid var(--headerColor);
-    padding-bottom: 0.5rem;
-}
 
-.Title h2:hover {
-    cursor: pointer;
-    filter: brightness(0.9);
-}
-
-/* ukraine */
+/**************** ukraine *********************/
 .bx {
     font-size: 2rem;
     color: var(--mainTitleColor);
@@ -207,12 +235,9 @@ header {
     width: 100%;
 }
 
-.mainPost-1 img {
-    max-width: 100%;
-}
 
-.mainPost-1 p {
-    width: 50%;
+.ukraine .mainPost-1 p {
+    width: 60%;
     font-weight: 600;
     font-size: large;
     cursor: pointer;
@@ -231,6 +256,7 @@ header {
 
 .mainPost-2 p {
     width: 45%;
+    font-size: 0.78rem;
     cursor: pointer;
 }
 
@@ -264,11 +290,13 @@ header {
     cursor: pointer;
 }
 
-p:hover {
-    filter: brightness(0.8);
+.rightPost img {
+    width:100%;
+    margin-top: 1rem;
+    background-size: cover;
 }
 
-/* north korea  */
+/****************** north korea  ***************/
 
 .north-korea {
     /* width: 100%;
@@ -279,19 +307,15 @@ p:hover {
     margin-bottom: 0.6rem;
 }
 
-.north-korea .rightPost .northKoreaImg {
-
-}
-
-.north-korea .rightPost img {
+/* .north-korea .rightPost img {
     max-width:100%;
-    /* padding: 2px; */
     margin-top: 1rem;
-}
+} */
 
 .northKoreaText h3 {
     width: 60%;
     font-size: 1.5rem;
+    margin-top: 0.4rem;
     font-weight: 200;
     color: #3d3e3f;
     cursor: pointer;
@@ -304,15 +328,8 @@ p:hover {
 }
 
 
-/* world news  */
+/***************** world news  ********************/
 
-.world-news .mainPost p {
-    width: 98%;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color:var(--textColor);
-    margin-top: 0.6rem;
-}
 .headlines {
     margin-top: 0.6rem;
     background-color: #f3f3f3;
@@ -328,8 +345,252 @@ p:hover {
     border-bottom: 1px solid var(--headerColor);
     font-size: 0.9rem;
     font-weight: 100;
+    cursor: pointer;
 }
 
+.rightPost ul li:hover {
+    color: var(--hrColor);
+}
+
+/************ press freedom  ***************/
+
+.press-freedom {
+    background-color: #f3f3f3;
+    padding: 1.5rem;
+}
+
+.press-freedom p {
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+    width: 90%;
+    cursor: pointer;
+}
+
+/* iran news  */
+.iran-news .rightPost p {
+    width: 90%;
+    cursor: pointer;
+}
+
+/********* health enviroment science  ************/
+
+.threePost .mainPost img {
+    width:100%;
+    height: 197px;
+    margin-top: 1rem;
+    background-size: cover;
+}
+
+/*************** video  ***************************/
+.video {
+    overflow: hidden;
+    background-color: #222f3a;
+    width: 100%;
+    padding-bottom: 1rem;
+
+}
+
+.video .Title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    width: 95%;
+    border-bottom: 1px solid var(--headerColor);
+    margin: 1.2rem 1.2rem 0.4rem 2rem;
+}
+
+.video .Title h2 {
+    color: #fff;
+}
+
+.video .Title h2:hover {
+    color: var(--hrColor);
+}
+
+.postVideo .mainPost {
+    overflow-x: scroll;
+    display: flex;
+    gap: 1rem;
+}
+
+.postVideo .mainPost .mainPost-1 {
+    width: 20rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.postVideo .mainPost .mainPost-1 .bx {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    padding: 0.3rem;
+    background-color: #00000098;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.postVideo .mainPost .mainPost-1 .bx:hover {
+    color:var(--headerColor);
+}
+
+.postVideo .mainPost-1 p {
+    color: #fff;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.postVideo .mainPost-1 img {
+    width: 20rem;
+    /* overflow-x: scroll; */
+}
+
+/***************** arrow container  ***************/
+.arrowContainer {
+    width: 100%;
+    height: 2rem;
+    /* background-color: red; */
+    /* margin-bottom: 0rem; */
+    position: relative;
+    transition: 0.3s;
+}
+
+.arrowContainer .bx {
+    position: absolute;
+    transform: translateY(-3rem);
+    background-color: #fff;
+    padding: 0.2rem 0.3rem;
+    font-size: 3rem;
+    box-shadow: -2px 3px 4px var(--mainTitleColor);
+    cursor: pointer;
+}
+
+.arrowContainer .bx:hover {
+    filter: brightness(0.98);
+    box-shadow: -3px 3px 4px var(--mainTitleColor);
+}
+
+.arrowContainer .bx-chevron-left {
+    right: 8rem;
+}
+
+.arrowContainer .bx-chevron-right {
+    right: 2rem;
+}
+
+/********************* content info  *****************/
+.contentInfo {
+    width: 100%;
+    /* height: 300px; */
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+    background-color: #3a79b7;
+    /* margin-bottom: 3rem; */
+}
+
+.contentRow {
+    width: 100%;
+    padding: 0.2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--mainTitleColor) ;
+}
+
+
+.contentRow:last-child {
+    border-bottom: 0px solid var(--mainTitleColor) ;
+}
+
+.about {
+    margin-right: 5rem;
+}
+
+.contentInfo .aboutItem {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: var(--headerColor);
+    cursor: pointer;
+    margin-right: 6rem;
+}
+
+.contentInfo .more .aboutItem {
+    flex-direction: row;
+}
+
+.contentInfo .aboutItem .aboutItem_1 .aboutList {
+    margin-bottom: 1.4rem;
+}
+
+.contentInfo h2 {
+    color: #89b1d8;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.contentInfo ul li {
+    color: var(--headerColor);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.contentInfo ul li:hover {
+    text-decoration: underline;
+}
+
+.contentInfo .socialMedia {
+    margin-left: 6rem;
+}
+
+.contentInfo .socialMedia ul {
+    display: flex;
+    transition: 0.3s;
+}
+
+.contentInfo .socialMedia ul li {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.contentInfo .socialMedia ul li i {
+    font-size: 25px;
+    color: var(--textColor);
+}
+
+.contentInfo .socialMedia ul li:hover {
+    filter: brightness(0.9);
+}
+
+.more {
+    display: flex;
+    width: 100%;
+}
+
+.more ul {
+    width: 100%;
+    margin-right: 3rem;
+}
+
+.contentRow .contentInfoAbout > i , .contentRow .country > i, .contentRow .about > i {
+    display: none;
+}
+
+
+/************** responsive media  ***************/
 
 @media (max-width:991px) {
 
@@ -342,7 +603,7 @@ p:hover {
         width: 100%;
         margin-right: 0;
         background-color: #e3e7eb;
-
+        z-index: 1500;
     }
 
     header {
@@ -364,17 +625,14 @@ p:hover {
         text-align: center;
         position: absolute;
         left: 40%;
-        top: 0.8rem;
-
-        
+        top: 0.8rem;    
     }
-
 
     .search {
         position: fixed;
         bottom: 0.6rem;
         right: 4rem;
-        z-index: 1000;
+        z-index:2000;
     }
 
     .varLine {
@@ -385,7 +643,7 @@ p:hover {
         font-size: 0.65rem;
     }
 
-    /* content  */
+    /*************** content  *********************/
     .content {
         padding: 0.6rem;
     }
@@ -425,6 +683,91 @@ p:hover {
         columns: 2 300px;
     }
 
+    /* threePost */
+
+    .threePost .mainPost img {
+        height: 100%;
+    }
+
+    /* video  */
+    .arrowContainer .bx {
+        transform: translateY(-2.6rem);
+
+    }
+
+    /* content info  */
+    
+    .contentInfo .contentRow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .contentInfo .aboutItem {
+        flex-direction: row;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .contentInfo .aboutItem .aboutList {
+        margin-right: 8rem;
+        font-size: 15px;
+    }
+
+    .contentInfo .more .aboutItem {
+        flex-direction: column;
+    }
+
+    .socialMedia {
+        flex: 100%;
+        order: 1;
+        border-bottom: 1px solid var(--mainTitleColor);
+        margin-bottom: 1rem;
+    }
+
+    .about {
+        flex: 100%;
+        order: 2;
+        /* border-bottom: 1px solid var(--mainTitleColor); */
+        margin-bottom: 1rem;
+
+    }
+
+    .contentInfoAbout {
+        order: 2;
+        width: 100%;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid var(--mainTitleColor);
+    }
+
+    ul {
+        margin-bottom: 1rem;
+    }
+
+    .contentInfo ul {
+
+    }
+
+    .country {
+        flex: 100%;
+        order: 3;
+        /* border-bottom: 1px solid var(--mainTitleColor); */
+        margin-bottom: 1rem;
+    }
+
+    /* contact info  */
+    .more ul {
+        margin-right: 0;
+    }
+
+    .about {
+        margin-right: 0;
+    }
+
+    .contentInfo .socialMedia {
+        margin-left:0;
+    }
+
 }
 
 @media (max-width:699px) {
@@ -447,12 +790,9 @@ p:hover {
         gap: 1.4rem;
     }
 
-    .mainPost-1 img {
-        max-width: 100%;
-    }
 
-    .mainPost-1 p {
-        width: 95%;
+    .ukraine .mainPost-1 p {
+        width: 100%;
     }
 }
 
@@ -470,6 +810,7 @@ p:hover {
         width: 194px;
         height: 109px;
     }
+
 
     .mainPost-2, .subPostList {
         /* margin-top: 0.8rem; */
@@ -493,6 +834,157 @@ p:hover {
     .subPostList .audio {
         top: 14px;
     }
+
+    /************** footer content info  ******************/
+    /* about  */
+    .contentInfo .aboutItem {
+        display: none;
+        margin: 0;
+    }
+
+    .contentRow {
+        /* height: 12rem; */
+        margin: 0px;
+        padding: 0;
+        font-size: 0.6rem;
+    }
+
+    .contentRow:last-child {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid var(--mainTitleColor);
+    }
+
+    .contentInfo h2 {
+        margin: 1rem;
+        font-weight: 300;
+        color: var(--headerColor);
+    }
+
+    .contentInfoAbout {
+        margin-bottom: 0;
+    }
+
+    .contentRow .country {
+        /* margin-bottom: 1rem; */
+        /* height: 1rem; */
+        padding: 0;
+        margin: 0;
+    }
+
+    .contentRow .country h2 {
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .socialMedia {
+        margin-bottom: 0;
+    }
+    .about {
+        padding: 0;
+        margin: 0;
+    }
+
+    .more {
+        padding: 0;
+        margin: 0;
+    }
+
+    .contentRow .contentInfoAbout , .contentRow .country, .contentRow .about {
+        position: relative;
+    }
+
+    .contentRow .contentInfoAbout > i , .contentRow .country > i, .contentRow .about > i {
+        display: inline-block;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        color: #fff;
+
+    }
 }
 
+@media (max-width:399px) {
+    .mainPost-2, .subPostList {
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .search {
+        right: 1rem;
+    }
+
+    .logo img {
+        left: 20%;
+    }
+
+    .contentInfo .socialMedia ul {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .contentInfo .socialMedia ul li {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contentInfo .socialMedia ul li i {
+        font-size: 16px;
+    }
+
+    .arrowContainer {
+        height: 2rem;
+    }
+
+    .arrowContainer .bx {
+        font-size: 0.8rem;
+    }
+
+    .arrowContainer .bx-chevron-left {
+        right: 5rem;
+    }
+
+    .arrowContainer .bx-chevron-right {
+        right: 1rem;
+    }
+
+    .media i:first-child {
+        margin-right: 2rem;
+    }
+    
+    .media i {
+        font-size: 0.8rem;
+
+    }
+
+    .menu .bx {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    } 
+}
+
+
+@media (max-width:163px) {
+    .media {
+        display: none;
+    }
+
+    main .content {
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .northKoreaText h3 {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
 
