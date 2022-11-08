@@ -11,7 +11,7 @@
     --bgColor:#ffffff ;
     --headerColor:#ebebeb;
     --hrColor:#3a79b7;
-    --textColor:#768492;
+    --textColor:#31363a;
     --mainTitleColor:#a1aab4;
     --subTitleColor:#A1AAB3;
 }
@@ -640,7 +640,8 @@ header {
     }
 
     .nav {
-        font-size: 0.65rem;
+        font-size: 0.8rem;
+        font-weight: 500;
     }
 
     /*************** content  *********************/
@@ -797,6 +798,17 @@ header {
 }
 
 @media (max-width:639px) {
+
+    .logo img {
+        left: 39%;
+    }
+
+    .menu .bx-menu {
+        position: absolute;
+        right: 1rem;
+        color: var(--textColor);
+    }
+
     .post {
         flex-direction: column;
     }
@@ -903,7 +915,7 @@ header {
     }
 }
 
-@media (max-width:399px) {
+@media (max-width:359px) {
     .mainPost-2, .subPostList {
         flex-direction: column;
         justify-content: center;
